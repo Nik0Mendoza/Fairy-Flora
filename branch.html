@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <script src=https://kit.fontawesome.com/894d660221.js crossorigin=anonymous></script>
+    <title>Branch</title>
+    <link rel=icon href=Assets\Image\logo.png type=png>
+    <link rel=stylesheet href=Assets/CSS/style.css>
+</head>
+
+<body>
+    <div class=container>
+        <div class=navigation>
+            <ul>
+                <li>
+                    <a href=#>
+                        <span class=icon>
+                            <img src=Assets/Image/logo.png alt=Logo style="margin-top:13px; width:60px; height:60px;">
+                        </span>
+                        <span class=title style=font-weight:bolder;font-size:large;margin-top:13px>Fairy Flora</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=inventory.html>
+                        <span class=icon>
+                            <ion-icon name=bar-chart-outline></ion-icon>
+                        </span>
+                        <span class=title>Inventory</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=#>
+                        <span class=icon>
+                            <ion-icon name=basket-outline></ion-icon>
+                        </span>
+                        <span class=title>Services</span>
+                    </a>
+                </li>
+                <li class="hovered">
+                    <a href=#>
+                        <span class=icon>
+                            <ion-icon name=storefront-outline></ion-icon>
+                        </span>
+                        <span class=title>Branch</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=employee.html>
+                        <span class=icon>
+                            <ion-icon name=people-outline></ion-icon>
+                        </span>
+                        <span class=title>Employee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=login.html>
+                        <span class=icon>
+                            <ion-icon name=log-out-outline></ion-icon>
+                        </span>
+                        <span class=title>Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class=main>
+            <div class="topbar" style="width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center; padding: 0 10px;">
+                <div class="toggle" style="width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; font-size: 2.5rem; cursor: pointer;">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="user" style="display: flex; align-items: center; cursor: pointer;">
+                    <span class="icon" style="color: #1d813e; font-size: 40px;">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </span>
+                </div>
+            </div>
+            
+            <div class=branch>
+                <div class=branchDetails>
+                    <div class=bdetails style=height:100vh>
+                        <div class=cardHeader style=align-items:flex-start;margin-bottom:20px>
+                            <h2>List of Branches</h2>
+                            <a href=# class=btn>Edit</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="text-align:start;color:#fe7702">Branch ID</th>
+                                    <th style="text-align:start;color:#fe7702">Location</th>
+                                    <th style="text-align:start;color:#fe7702">Employee Assigned</th>
+                                    <th style="text-align:end; color:#fe7702">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Alangilan</td>
+                                    <td>Emjay Mendoza</td>
+                                    <td class="status green">OPEN</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src=Assets/JavaScript/JS/main.js></script>
+    <script type=module src=https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js></script>
+    <script nomodule src=https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js></script>
+</body>
+
+</html>
